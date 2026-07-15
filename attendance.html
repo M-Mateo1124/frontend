@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Attendance Management</title>
+
+<link rel="stylesheet"
+href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+ERMS
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="../index.html">Home</a></li>
+
+<li><a href="login.html">Login/Register</a></li>
+
+<li><a href="events.html">Event Listing</a></li>
+
+<li><a href="registration.html">Registration Form</a></li>
+
+<li><a href="attendance.html" class="active">Attendance / QR</a></li>
+
+<li><a href="dashboard.html">Dashboard</a></li>
+
+<li><a href="certificates.html">Certificates</a></li>
+
+</ul>
+
+<div class="menu-btn">
+
+☰
+
+</div>
+
+</nav>
+
+</header>
+
+<section class="page-header">
+
+<h1>Attendance Management</h1>
+
+<p>
+
+Verify participant attendance manually or by scanning a QR Code.
+
+</p>
+
+</section>
+
+<section class="attendance-container">
+
+<div class="attendance-card">
+
+<h2>QR Code Scanner</h2>
+
+<div class="scanner-box">
+
+<video id="qr-video" autoplay></video>
+
+<div class="scanner-overlay">
+
+📷 Camera Preview
+
+</div>
+
+</div>
+
+<button
+class="btn"
+id="startScanner">
+
+Start Scanner
+
+</button>
+
+<button
+class="btn secondary-btn"
+id="stopScanner">
+
+Stop Scanner
+
+</button>
+
+<p id="scanResult">
+
+Waiting for QR Scan...
+
+</p>
+
+</div>
+
+<div class="attendance-card">
+
+<h2>Manual Attendance</h2>
+
+<form id="attendanceForm">
+
+<div class="form-group">
+
+<label>Participant ID</label>
+
+<input
+type="text"
+placeholder="Enter Participant ID"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>Participant Name</label>
+
+<input
+type="text"
+placeholder="Enter Participant Name"
+required>
+
+</div>
+
+<div class="form-group">
+
+<label>Event</label>
+
+<select required>
+
+<option>Select Event</option>
+
+<option>Modern Web Development</option>
+
+<option>Technology Summit 2026</option>
+
+<option>Cloud Computing Essentials</option>
+
+<option>UI / UX Design Bootcamp</option>
+
+</select>
+
+</div>
+
+<button
+type="submit"
+class="btn">
+
+Mark as Present
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<section class="attendance-log">
+
+<h2>Today's Attendance</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Name</th>
+
+<th>Event</th>
+
+<th>Status</th>
+
+<th>Time</th>
+
+</tr>
+
+</thead>
+
+<tbody id="attendanceTable">
+
+<tr>
+
+<td>2026001</td>
+
+<td>John Cruz</td>
+
+<td>Technology Summit</td>
+
+<td><span class="present">Present</span></td>
+
+<td>8:12 AM</td>
+
+</tr>
+
+<tr>
+
+<td>2026002</td>
+
+<td>Maria Santos</td>
+
+<td>Web Development</td>
+
+<td><span class="present">Present</span></td>
+
+<td>8:17 AM</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Event Registration Management System
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

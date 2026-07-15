@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Event Listing | Event Registration Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                ERMS
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="login.html">Login/Register</a></li>
+
+                <li><a href="events.html" class="active">Event Listing</a></li>
+
+                <li><a href="registration.html">Registration Form</a></li>
+
+                <li><a href="attendance.html">Attendance / QR</a></li>
+
+                <li><a href="dashboard.html">Dashboard</a></li>
+
+                <li><a href="certificates.html">Certificates</a></li>
+
+            </ul>
+
+            <div class="menu-btn">
+                ☰
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- Page Header -->
+
+    <section class="page-header">
+
+        <h1>Upcoming Events</h1>
+
+        <p>
+
+            Browse available events and register online.
+
+        </p>
+
+    </section>
+
+    <!-- Search -->
+
+    <section class="event-controls">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search events...">
+
+        <select id="categoryFilter">
+
+            <option value="all">All Categories</option>
+
+            <option value="Seminar">Seminar</option>
+
+            <option value="Workshop">Workshop</option>
+
+            <option value="Conference">Conference</option>
+
+            <option value="Webinar">Webinar</option>
+
+        </select>
+
+    </section>
+
+    <!-- Event Cards -->
+
+    <section class="events-grid" id="eventContainer">
+
+        <!-- Card -->
+
+        <div class="event-card" data-category="Seminar">
+
+            <img src="https://picsum.photos/400/220?random=1">
+
+            <div class="event-content">
+
+                <span class="badge seminar">
+                    Seminar
+                </span>
+
+                <h3>Modern Web Development</h3>
+
+                <p>
+
+                    Learn HTML, CSS, JavaScript and modern frameworks.
+
+                </p>
+
+                <ul>
+
+                    <li>📅 July 28, 2026</li>
+
+                    <li>📍 Main Conference Hall</li>
+
+                    <li>👥 120 Seats</li>
+
+                </ul>
+
+                <a href="registration.html?event=Modern%20Web%20Development" class="btn">Register</a>
+
+            </div>
+
+        </div>
+
+        <!-- Card -->
+
+        <div class="event-card" data-category="Workshop">
+
+            <img src="https://picsum.photos/400/220?random=2">
+
+            <div class="event-content">
+
+                <span class="badge workshop">
+                    Workshop
+                </span>
+
+                <h3>UI / UX Design Bootcamp</h3>
+
+                <p>
+
+                    Hands-on workshop for designing modern interfaces.
+
+                </p>
+
+                <ul>
+
+                    <li>📅 August 2, 2026</li>
+
+                    <li>📍 Innovation Lab</li>
+
+                    <li>👥 60 Seats</li>
+
+                </ul>
+
+                <a href="registration.html?event=UI%20UX%20Design%20Bootcamp" class="btn">Register</a>>
+
+            </div>
+
+        </div>
+
+        <!-- Card -->
+
+        <div class="event-card" data-category="Conference">
+
+            <img src="https://picsum.photos/400/220?random=3">
+
+            <div class="event-content">
+
+                <span class="badge conference">
+                    Conference
+                </span>
+
+                <h3>Technology Summit 2026</h3>
+
+                <p>
+
+                    Meet professionals and industry leaders.
+
+                </p>
+
+                <ul>
+
+                    <li>📅 August 15, 2026</li>
+
+                    <li>📍 Grand Convention Center</li>
+
+                    <li>👥 500 Seats</li>
+
+                </ul>
+
+                <a href="registration.html?event=Technology%20Summit%202026" class="btn">Register</a>
+
+            </div>
+
+        </div>
+
+        <!-- Card -->
+
+        <div class="event-card" data-category="Webinar">
+
+            <img src="https://picsum.photos/400/220?random=4">
+
+            <div class="event-content">
+
+                <span class="badge webinar">
+                    Webinar
+                </span>
+
+                <h3>Cloud Computing Essentials</h3>
+
+                <p>
+
+                    Attend online and learn cloud technologies.
+
+                </p>
+
+                <ul>
+
+                    <li>📅 August 20, 2026</li>
+
+                    <li>💻 Online via Zoom</li>
+
+                    <li>👥 Unlimited</li>
+
+                </ul>
+
+                <a href="registration.html?event=Cloud%20Computing%20Essentials" class="btn">Register</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>
+
+            © 2026 Event Registration Management System
+
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

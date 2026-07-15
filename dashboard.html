@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard | Event Registration Management System</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+ERMS
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="login.html">Login/Register</a></li>
+
+<li><a href="events.html">Event Listing</a></li>
+
+<li><a href="registration.html">Registration Form</a></li>
+
+<li><a href="attendance.html">Attendance / QR</a></li>
+
+<li><a href="dashboard.html" class="active">Dashboard</a></li>
+
+<li><a href="certificates.html">Certificates</a></li>
+
+</ul>
+
+<div class="menu-btn">☰</div>
+
+</nav>
+
+</header>
+
+<section class="page-header">
+
+<h1>Administrator Dashboard</h1>
+
+<p>
+
+Monitor events, registrations, attendance, and certificates.
+
+</p>
+
+</section>
+
+<!-- Statistics -->
+
+<section class="dashboard-cards">
+
+<div class="dashboard-card">
+
+<h3>Total Events</h3>
+
+<h1>12</h1>
+
+<p>Active Events</p>
+
+</div>
+
+<div class="dashboard-card">
+
+<h3>Registered Participants</h3>
+
+<h1>486</h1>
+
+<p>Total Registrations</p>
+
+</div>
+
+<div class="dashboard-card">
+
+<h3>Attendance Today</h3>
+
+<h1>328</h1>
+
+<p>Participants Checked In</p>
+
+</div>
+
+<div class="dashboard-card">
+
+<h3>Certificates Issued</h3>
+
+<h1>241</h1>
+
+<p>Completed Events</p>
+
+</div>
+
+</section>
+
+<!-- Dashboard Grid -->
+
+<section class="dashboard-grid">
+
+<!-- Recent Registrations -->
+
+<div class="dashboard-panel">
+
+<h2>Recent Registrations</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+
+<th>Event</th>
+
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>John Cruz</td>
+
+<td>Technology Summit</td>
+
+<td><span class="status registered">Registered</span></td>
+
+</tr>
+
+<tr>
+
+<td>Maria Santos</td>
+
+<td>Cloud Computing</td>
+
+<td><span class="status registered">Registered</span></td>
+
+</tr>
+
+<tr>
+
+<td>James Reyes</td>
+
+<td>Web Development</td>
+
+<td><span class="status registered">Registered</span></td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<!-- Upcoming Events -->
+
+<div class="dashboard-panel">
+
+<h2>Upcoming Events</h2>
+
+<ul class="dashboard-list">
+
+<li>
+
+<strong>Modern Web Development</strong>
+
+<span>July 28, 2026</span>
+
+</li>
+
+<li>
+
+<strong>Technology Summit</strong>
+
+<span>August 15, 2026</span>
+
+</li>
+
+<li>
+
+<strong>Cloud Computing Essentials</strong>
+
+<span>August 20, 2026</span>
+
+</li>
+
+<li>
+
+<strong>UI/UX Design Bootcamp</strong>
+
+<span>September 3, 2026</span>
+
+</li>
+
+</ul>
+
+</div>
+
+<!-- Attendance Summary -->
+
+<div class="dashboard-panel">
+
+<h2>Today's Attendance</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Event</th>
+
+<th>Present</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Technology Summit</td>
+
+<td>120</td>
+
+</tr>
+
+<tr>
+
+<td>Web Development</td>
+
+<td>92</td>
+
+</tr>
+
+<tr>
+
+<td>Cloud Computing</td>
+
+<td>116</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+<!-- Quick Actions -->
+
+<div class="dashboard-panel">
+
+<h2>Quick Actions</h2>
+
+<div class="action-buttons">
+
+<a href="events.html" class="btn">
+
+Manage Events
+
+</a>
+
+<a href="registration.html" class="btn">
+
+New Registration
+
+</a>
+
+<a href="attendance.html" class="btn">
+
+Scan Attendance
+
+</a>
+
+<a href="certificates.html" class="btn">
+
+Generate Certificates
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Event Registration Management System
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
