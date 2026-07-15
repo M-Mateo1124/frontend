@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event Registration Management System</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+<header>
+
+    <div class="logo">
+        <i class="fa-solid fa-calendar-check"></i>
+        Event Registration
+    </div>
+
+    <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <nav>
+        <a href="#login">Login/Register</a>
+        <a href="#events">Event Listing</a>
+        <a href="#registration">Registration</a>
+        <a href="#attendance">Attendance / QR</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#certificate">Certificates</a>
+    </nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+    <h1>Event Registration Management System</h1>
+    <p>Register for events, manage attendance, and download certificates.</p>
+</section>
+
+<!-- LOGIN -->
+
+<section id="login" class="card">
+
+<h2>Login / Register</h2>
+
+<div class="login-box">
+
+<input type="email" placeholder="Email">
+
+<input type="password" placeholder="Password">
+
+<button>Login</button>
+
+<p>Don't have an account?</p>
+
+<button class="secondary">Register</button>
+
+</div>
+
+</section>
+
+<!-- EVENTS -->
+
+<section id="events" class="card">
+
+<h2>Upcoming Events</h2>
+
+<div class="event-container">
+
+<div class="event-card">
+
+<h3>Web Development Seminar</h3>
+
+<p>Date: July 30</p>
+
+<p>Venue: Main Auditorium</p>
+
+<button>Register</button>
+
+</div>
+
+<div class="event-card">
+
+<h3>Cybersecurity Workshop</h3>
+
+<p>Date: August 2</p>
+
+<p>Venue: Conference Hall</p>
+
+<button>Register</button>
+
+</div>
+
+<div class="event-card">
+
+<h3>AI Bootcamp</h3>
+
+<p>Date: August 10</p>
+
+<p>Venue: Innovation Center</p>
+
+<button>Register</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- REGISTRATION -->
+
+<section id="registration" class="card">
+
+<h2>Registration Form</h2>
+
+<form>
+
+<input type="text" placeholder="Full Name">
+
+<input type="email" placeholder="Email">
+
+<input type="text" placeholder="School / Organization">
+
+<select>
+
+<option>Select Event</option>
+
+<option>Web Development</option>
+
+<option>Cybersecurity</option>
+
+<option>AI Bootcamp</option>
+
+</select>
+
+<button type="submit">Submit Registration</button>
+
+</form>
+
+</section>
+
+<!-- ATTENDANCE -->
+
+<section id="attendance" class="card">
+
+<h2>Attendance / QR Code</h2>
+
+<div class="qr">
+
+<i class="fa-solid fa-qrcode"></i>
+
+<p>Scan QR Code for Attendance</p>
+
+<button>Generate QR</button>
+
+</div>
+
+</section>
+
+<!-- DASHBOARD -->
+
+<section id="dashboard" class="card">
+
+<h2>Dashboard</h2>
+
+<div class="dashboard">
+
+<div class="box">
+
+<h3>350</h3>
+
+<p>Registered Participants</p>
+
+</div>
+
+<div class="box">
+
+<h3>8</h3>
+
+<p>Upcoming Events</p>
+
+</div>
+
+<div class="box">
+
+<h3>300</h3>
+
+<p>Certificates Issued</p>
+
+</div>
+
+<div class="box">
+
+<h3>275</h3>
+
+<p>Attendance Recorded</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CERTIFICATES -->
+
+<section id="certificate" class="card">
+
+<h2>Certificates</h2>
+
+<div class="certificate">
+
+<i class="fa-solid fa-award"></i>
+
+<h3>Certificate of Participation</h3>
+
+<p>Download your certificate after attending the event.</p>
+
+<button>Download PDF</button>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Event Registration Management System</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
