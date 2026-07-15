@@ -3,26 +3,37 @@
 const menuBtn = document.querySelector(".menu-btn");
 const navLinks = document.querySelector(".nav-links");
 
-menuBtn.addEventListener("click", () => {
+if (menuBtn && navLinks) {
 
-    navLinks.classList.toggle("active");
+    menuBtn.addEventListener("click", () => {
 
-});
+        navLinks.classList.toggle("active");
+
+    });
+
+}
 
 // Automatically highlight active page
 
 const currentPage = location.pathname.split("/").pop();
 
-document.querySelectorAll(".nav-links a").forEach(link => {
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
-    if (link.getAttribute("href").includes(currentPage)) {
+    anchor.addEventListener("click", function(e){
 
-        document.querySelectorAll(".nav-links a")
-            .forEach(item => item.classList.remove("active"));
+        const target = document.querySelector(this.getAttribute("href"));
 
-        link.classList.add("active");
+        if(target){
 
-    }
+            e.preventDefault();
+
+            target.scrollIntoView({
+                behavior:"smooth"
+            });
+
+        }
+
+    });
 
 });
 
@@ -43,19 +54,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 });
 
-/* ===========================
-   LOGIN / REGISTER SWITCH
-=========================== */
-
 const loginBtn = document.getElementById("loginBtn");
 const registerBtn = document.getElementById("registerBtn");
 
 const loginForm = document.getElementById("loginForm");
 const registerForm = document.getElementById("registerForm");
 
-if(loginBtn){
+if (loginBtn && registerBtn && loginForm && registerForm) {
 
-    loginBtn.addEventListener("click", ()=>{
+    loginBtn.addEventListener("click", function () {
 
         loginBtn.classList.add("active");
         registerBtn.classList.remove("active");
@@ -65,11 +72,7 @@ if(loginBtn){
 
     });
 
-}
-
-if(registerBtn){
-
-    registerBtn.addEventListener("click", ()=>{
+    registerBtn.addEventListener("click", function () {
 
         registerBtn.classList.add("active");
         loginBtn.classList.remove("active");
